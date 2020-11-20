@@ -92,28 +92,6 @@ Wire Wire Line
 Connection ~ 5800 4400
 Wire Wire Line
 	5800 4400 5800 4550
-$Comp
-L dk_Rectangular-Connectors-Headers-Male-Pins:640456-2 J2
-U 1 1 5FB75D24
-P 7900 3450
-F 0 "J2" V 7991 3322 50  0000 R CNN
-F 1 "640456-2" V 7900 3322 50  0000 R CNN
-F 2 "digikey-footprints:PinHeader_1x2_P2.54mm_Drill1.02mm" H 8100 3650 60  0001 L CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=640456&DocType=Customer+Drawing&DocLang=English" H 8100 3750 60  0001 L CNN
-F 4 "A1921-ND" H 8100 3850 60  0001 L CNN "Digi-Key_PN"
-F 5 "640456-2" H 8100 3950 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 8100 4050 60  0001 L CNN "Category"
-F 7 "Rectangular Connectors - Headers, Male Pins" H 8100 4150 60  0001 L CNN "Family"
-F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=640456&DocType=Customer+Drawing&DocLang=English" H 8100 4250 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/te-connectivity-amp-connectors/640456-2/A1921-ND/109003" H 8100 4350 60  0001 L CNN "DK_Detail_Page"
-F 10 "CONN HEADER VERT 2POS 2.54MM" H 8100 4450 60  0001 L CNN "Description"
-F 11 "TE Connectivity AMP Connectors" H 8100 4550 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 8100 4650 60  0001 L CNN "Status"
-	1    7900 3450
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7800 3450 7800 4400
 Wire Wire Line
 	7800 4400 7000 4400
 $Comp
@@ -290,15 +268,28 @@ Wire Wire Line
 	3400 2050 3400 3350
 Wire Wire Line
 	3400 3450 3400 4400
-Text Notes 7700 3450 0    50   ~ 0
--\n
 Connection ~ 7000 3350
-Text Notes 7700 3350 0    50   ~ 0
-+\n
 Wire Wire Line
 	7000 3350 7800 3350
 Text Notes 3450 3350 0    50   ~ 0
 +
 Text Notes 3450 3500 0    50   ~ 0
 -\n
+Text Notes 7700 3400 0    50   ~ 0
++\n
+Wire Wire Line
+	7800 3450 7800 4400
+Text Label 7700 3500 0    50   ~ 0
+-
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5FB80AFB
+P 8000 3450
+F 0 "J2" H 8100 3500 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 8050 3250 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 8000 3450 50  0001 C CNN
+F 3 "~" H 8000 3450 50  0001 C CNN
+	1    8000 3450
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
